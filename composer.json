@@ -1,0 +1,41 @@
+{
+  "name": "echo-fusion/codestandard",
+  "type": "composer-plugin",
+  "description": "This project contains the code standard for echoFusion framework",
+  "authors": [
+    {
+      "name": "Amir Shadanfar",
+      "email": "a.shadanfar.it@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "composer-plugin-api": "^1.1 || ^2.0"
+  },
+  "require-dev": {
+    "composer/composer": "^1.10.6 || ^2.0",
+    "friendsofphp/php-cs-fixer": "^3.13",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "vimeo/psalm": "5.x-dev"
+  },
+  "conflict": {
+    "composer/composer": "<1.10.6",
+    "friendsofphp/php-cs-fixer":  "<2.19 || >=4.0.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "EchoFusion\\CodeStandard\\": "src/"
+    }
+  },
+  "scripts": {
+    "analyze": "psalm --no-cache --no-progress --show-info=false",
+    "cs-fix": "php-cs-fixer fix",
+    "cs-check": "php-cs-fixer fix --dry-run --diff"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
