@@ -9,19 +9,11 @@
     }
   ],
   "require": {
-    "ext-json": "*",
-    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-    "composer-plugin-api": "^1.1 || ^2.0"
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
   },
   "require-dev": {
-    "composer/composer": "^1.10.6 || ^2.0",
-    "friendsofphp/php-cs-fixer": "^3.13",
-    "phpcompatibility/php-compatibility": "^9.3",
+    "friendsofphp/php-cs-fixer": "dev-master",
     "vimeo/psalm": "5.x-dev"
-  },
-  "conflict": {
-    "composer/composer": "<1.10.6",
-    "friendsofphp/php-cs-fixer":  "<2.19 || >=4.0.0"
   },
   "config": {
     "sort-packages": true
