@@ -1,6 +1,6 @@
 {
   "name": "echo-fusion/codestandard",
-  "type": "composer-plugin",
+  "type": "library",
   "description": "This project contains the code standard for echoFusion framework",
   "authors": [
     {
@@ -36,6 +36,6 @@
     "cs-fix": "php-cs-fixer fix",
     "cs-check": "php-cs-fixer fix --dry-run --diff"
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true
 }
