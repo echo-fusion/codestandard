@@ -1,6 +1,6 @@
 # Code standard
 
-This is a package for making uniformity cross all echo-fusion framework packages.
+This package promotes uniformity across all EchoFusion framework packages by establishing a standardized set of rules for the "friendsofphp/php-cs-fixer" package.
 
 ## Installation
 
@@ -20,11 +20,9 @@ The following versions of PHP are supported by this version.
 
 ## Usage
 
-To create packages that will integrate with the EchoFusion framework in the future, you should adhere to the following rule sets configuration. Here's how to implement it:
+To develop packages that will integrate with the EchoFusion framework, follow this rule set configuration. Here's how to apply it:
 
-This package includes "friendsofphp/php-cs-fixer" for maintaining coding style, so you don't need to list it in your composer.json file.
-
-Simply copy the phpcs-fixer configuration file located in the template directory and remove the 'template' extension from the end. Your final config file should be named:
+Copy the phpcs-fixer configuration file from the template directory and remove the 'template' extension. Your final configuration file should be named:
 ``
 .php-cs-fixer.dist.php
 ``
