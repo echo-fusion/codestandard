@@ -2,6 +2,7 @@
   "name": "echo-fusion/codestandard",
   "type": "library",
   "description": "This project contains the code standard for echoFusion framework",
+  "license": "MIT",
   "authors": [
     {
       "name": "Amir Shadanfar",
