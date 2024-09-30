@@ -15,18 +15,18 @@
     "friendsofphp/php-cs-fixer": "dev-master",
     "vimeo/psalm": "5.x-dev"
   },
-  "config": {
-    "sort-packages": true
-  },
   "autoload": {
     "psr-4": {
       "EchoFusion\\CodeStandard\\": "src/"
     }
   },
   "scripts": {
-    "analyze": "psalm --no-cache --no-progress --show-info=false",
-    "cs-fix": "php-cs-fixer fix",
-    "cs-check": "php-cs-fixer fix --dry-run --diff"
+    "test": [
+      "@cs-check","@analyze"
+    ],
+    "cs-fix": "php-cs-fixer fix --config=.php-cs-fixer.dist.php",
+    "cs-check": "php-cs-fixer fix --dry-run --diff",
+    "analyze": "psalm --show-info=false --no-cache --no-progress"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
