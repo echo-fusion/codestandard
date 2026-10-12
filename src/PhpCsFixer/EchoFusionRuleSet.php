@@ -160,7 +160,9 @@ final class EchoFusionRuleSet implements RuleSet
                 'syntax' => 'short',
             ],
             'magic_method_casing' => true,
-            'mb_str_functions' => true,
+            // Off on purpose: it rewrites strlen()/substr()/strpos() to their mb_* versions. Code that works with
+            // byte offsets (preg_* offsets, the 72 byte bcrypt limit, parsing) then silently breaks on non-ASCII text.
+            'mb_str_functions' => false,
             'method_chaining_indentation' => true,
             'multiline_comment_opening_closing' => true,
             'native_function_invocation' => true,
